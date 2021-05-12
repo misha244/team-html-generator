@@ -17,25 +17,36 @@
     />
   </head>
   <body>
-    <header class="navbar justify-content-center bg-danger p-5">
-      <h1 class="text-light">My Team</h1>
-    </header>
-    <div class="column">
-      <div class="col-9">
-        <div class="card mh-100 bg-primary text-light rounded card-block">
-          <h5 class="card-title p-1">card</h5>
-          <i class="fas fa-cat"></i>
-          <h6 class="card-subtitle mb-2 text-light p-md-2">WKJfhgghkh</h6>
-          <h6 class="card-subtitle mb-2 text-light p-md-2">Humidity: wap</h6>
-        </div>
-        <div class="card mh-100 bg-primary text-light rounded card-block">
-          <h5 class="card-title p-1">card</h5>
-          <i class="fas fa-cat"></i>
-          <h6 class="card-subtitle mb-2 text-light p-md-2">WKJfhgghkh</h6>
-          <h6 class="card-subtitle mb-2 text-light p-md-2">Humidity: wap</h6>
+    <nav class="navbar justify-content-center bg-danger p-5">
+      <header>
+        <h1 class="text-light">My Team</h1>
+      </header>
+    </nav>
+    <main class="container-fluid justify-content-center d-flex">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="bg-danger col">
+          <div class="card m-3">
+            <div class="card-title">
+              <i class="fas fa-cat"></i>
+              <h6 class="bg-primary card-subtitle mb-2 text-light p-md-2">
+                Name
+              </h6>
+              <h6 class="bg-primary card-subtitle mb-2 text-light p-md-2">
+                Role
+              </h6>
+            </div>
+            <div class="card-info">
+              <ul class="info-list">
+                <li>ID:</li>
+                <li>Office Number:</li>
+                <li>Email: <a href="">add mailto here</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
