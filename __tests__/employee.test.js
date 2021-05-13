@@ -14,4 +14,20 @@ describe("Employee", () => {
 
     expect(actual).toBe(expected);
   });
+
+  it("new instance of Employee Id should be set", () => {
+    const expected = employeeInfo.employeeId;
+    const employee = new Employee(employeeInfo);
+    const actual = employee.employeeId;
+
+    expect(actual).toBe(expected);
+  });
+
+  it("email should be email so that it is email", () => {
+    const expected = employeeInfo.employeeEmail;
+    const employee = new Employee(employeeInfo);
+    const actual = employee.employeeEmail;
+
+    expect(actual).toBe(expected);
+  });
 });
