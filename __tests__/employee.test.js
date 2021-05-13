@@ -30,4 +30,36 @@ describe("Employee", () => {
 
     expect(actual).toBe(expected);
   });
+
+  it("should get employeeName when called", () => {
+    const expected = employeeInfo.employeeName;
+    const employee = new Employee(employeeInfo);
+    const actual = employee.getName();
+
+    expect(actual).toBe(expected);
+  });
+
+  it("should get employeeId when called", () => {
+    const expected = employeeInfo.employeeId;
+    const employee = new Employee(employeeInfo);
+    const actual = employee.getId();
+
+    expect(actual).toBe(expected);
+  });
+
+  it("should get employeeEmail when called", () => {
+    const expected = employeeInfo.employeeEmail;
+    const employee = new Employee(employeeInfo);
+    const actual = employee.getEmail();
+
+    expect(actual).toBe(expected);
+  });
+
+  it("should get employeeRole when called", () => {
+    const expected = "Employee";
+    const employee = new Employee(employeeInfo);
+    const actual = employee.getRole();
+
+    expect(actual).toBe(expected);
+  });
 });
