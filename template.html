@@ -17,35 +17,32 @@
     />
   </head>
   <body>
-    <nav class="navbar justify-content-center bg-danger p-5">
-      <header>
-        <h1 class="text-light">My Team</h1>
-      </header>
-    </nav>
-    <main class="container-fluid justify-content-center d-flex">
+    <header class="navbar justify-content-center bg-danger mb-4 p-5">
+      <h1 class="text-light">My Team</h1>
+    </header>
+
+    <div
+      class="container-fluid justify-content-center d-flex manager-container"
+    >
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="bg-danger col">
           <div class="card m-3">
-            <div class="card-title">
-              <i class="fas fa-cat"></i>
-              <h6 class="bg-primary card-subtitle mb-2 text-light p-md-2">
-                Name
-              </h6>
-              <h6 class="bg-primary card-subtitle mb-2 text-light p-md-2">
-                Role
-              </h6>
+            <div class="card-header bg-danger">
+              Name <i class="fas fa-cat"></i> Role
             </div>
-            <div class="card-info">
-              <ul class="info-list">
-                <li>ID:</li>
-                <li>Office Number:</li>
-                <li>Email: <a href="">add mailto here</a></li>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">ID:</li>
+                <li class="list-group-item">Office Number:</li>
+                <li class="list-group-item">
+                  Email: <a href="">add mailto here</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
