@@ -4,8 +4,8 @@ const Engineer = require("../lib/Engineer");
 
 const renderIntern = (employee) => {
   return `
-        <div class="col card m-4 bg-light border-dark" style="width: 14rem">
-          <div class="card-header bg-danger text-light">
+        <div class="card m-4 bg-light border-dark" style="width: 14rem">
+          <div class="col card-header bg-danger text-light">
             ${employee.employeeName}
             <div><i class="fas fa-cat"></i> Intern</div>
           </div>
@@ -26,8 +26,8 @@ const renderIntern = (employee) => {
 };
 const renderManager = (employee) => {
   return `
-        <div class="col card m-4 bg-light border-dark" style="width: 14rem">
-          <div class="card-header bg-danger text-light">
+        <div class="card m-4 bg-light border-dark" style="width: 14rem">
+          <div class="col card-header bg-danger text-light">
             ${employee.employeeName}
             <div><i class="fas fa-cat"></i> Manager</div>
           </div>
@@ -50,8 +50,8 @@ const renderManager = (employee) => {
 };
 const renderEngineer = (employee) => {
   return `
-        <div class="col card m-4 bg-light border-dark" style="width: 14rem">
-          <div class="card-header bg-danger text-light">
+        <div class="card m-4 bg-light border-dark" style="width: 14rem">
+          <div class="col card-header bg-danger text-light">
             ${employee.employeeName}
             <div><i class="fas fa-cat"></i> Engineer</div>
           </div>
