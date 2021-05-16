@@ -3,61 +3,77 @@ const Manager = require("../lib/Manager");
 const Engineer = require("../lib/Engineer");
 
 const renderIntern = (employee) => {
-  return ` 
-  <div class="card m-3 bg-light border-dark" style="width: 14rem">
-  <div class="card-header bg-danger text-light">
-    ${employee.employeeName}
-    <div><i class="fas fa-cat"></i> Intern</div>
-  </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li class="list-group-item">ID: ${employee.employeeId}</li>
-      <li class="list-group-item">
-      Email: <a href="mailto:${employee.employeeEmail}">${employee.employeeEmail}</a>
-      </li>
-      <li class="list-group-item">School: ${employee.school}</li>
-    </ul>
-  </div>
-</div>
-</div>
- `;
+  return `
+      <div class="card m-3 bg-light border-dark" style="width: 14rem">
+        <div class="card-header bg-danger text-light">
+          ${employee.employeeName}
+          <div><i class="fas fa-cat"></i> Intern</div>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">ID: ${employee.employeeId}</li>
+            <li class="list-group-item">
+              Email:
+              <a href="mailto:${employee.employeeEmail}"
+                >${employee.employeeEmail}</a
+              >
+            </li>
+            <li class="list-group-item">School: ${employee.school}</li>
+          </ul>
+        </div>
+      </div>
+  `;
 };
 const renderManager = (employee) => {
   return `
-  <div class="card m-3 bg-light border-dark" style="width: 14rem">
-  <div class="card-header bg-danger text-light">
-  ${employee.employeeName}
-    <div><i class="fas fa-cat"></i> Manager</div>
-  </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li class="list-group-item">ID: ${employee.employeeId}</li>
-      <li class="list-group-item">
-      Email: <a href="mailto:${employee.employeeEmail}">${employee.employeeEmail}</a>
-      </li>
-      <li class="list-group-item">Office Number: ${employee.officeNumber}</li>
-    </ul>
-  </div>
-  </div>`;
+      <div class="card m-3 bg-light border-dark" style="width: 14rem">
+        <div class="card-header bg-danger text-light">
+          ${employee.employeeName}
+          <div><i class="fas fa-cat"></i> Manager</div>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">ID: ${employee.employeeId}</li>
+            <li class="list-group-item">
+              Email:
+              <a href="mailto:${employee.employeeEmail}"
+                >${employee.employeeEmail}</a
+              >
+            </li>
+            <li class="list-group-item">
+              Office Number: ${employee.officeNumber}
+            </li>
+          </ul>
+        </div>
+      </div>
+  `;
 };
 const renderEngineer = (employee) => {
-  return `<div class="card m-3 bg-light border-dark" style="width: 14rem">
-  <div class="card-header bg-danger text-light">
-  ${employee.employeeName}
-    <div><i class="fas fa-cat"></i> Engineer</div>
-  </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li class="list-group-item">ID: ${employee.employeeId}</li>
-      <li class="list-group-item">
-      Email: <a href="mailto:${employee.employeeEmail}">${employee.employeeEmail}</a>
-      </li>
-      <li class="list-group-item">
-      GitHub Link: <a href="https://github.com/${employee.github}">${employee.github}</a> 
-      </li>
-    </ul>
-  </div>
-</div>`;
+  return `
+      <div class="card m-3 bg-light border-dark" style="width: 14rem">
+        <div class="card-header bg-danger text-light">
+          ${employee.employeeName}
+          <div><i class="fas fa-cat"></i> Engineer</div>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">ID: ${employee.employeeId}</li>
+            <li class="list-group-item">
+              Email:
+              <a href="mailto:${employee.employeeEmail}"
+                >${employee.employeeEmail}</a
+              >
+            </li>
+            <li class="list-group-item">
+              GitHub Link:
+              <a href="https://github.com/${employee.github}"
+                >${employee.github}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+  `;
 };
 
 const generateHTML = (employees) => {
