@@ -2,12 +2,12 @@ const Employee = require("../src/lib/Employee");
 
 describe("Employee", () => {
   const employeeInfo = {
-    employeeName: "Corrado",
+    employeeName: "Wee Bey",
     employeeId: "420",
-    employeeEmail: "unclejun@yahoo.com",
+    employeeEmail: "weebeyaquarium@yahoo.com",
   };
 
-  it("new instance of Employee should be named after a character in The Sopranos", () => {
+  it("new instance of Employee should be named after a character in The Wire", () => {
     const expected = employeeInfo.employeeName;
     const employee = new Employee(employeeInfo);
     const actual = employee.employeeName;
