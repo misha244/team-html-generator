@@ -4,10 +4,10 @@ const Engineer = require("../lib/Engineer");
 
 const renderIntern = (employee) => {
   return `
-        <div class="shadow-lg card m-4 bg-light" style="width: 14rem">
+        <div class="shadow-lg card m-4 bg-light" style="width: 15rem">
           <div class="col card-header bg-success text-light">
             ${employee.employeeName}
-            <div><i class="fas fa-cat"></i> Intern</div>
+            <div><i class="fas fa-chess-pawn"></i> Intern</div>
           </div>
           <div class="card-body">
             <ul class="list-group">
@@ -26,10 +26,10 @@ const renderIntern = (employee) => {
 };
 const renderManager = (employee) => {
   return `
-        <div class="shadow-lg card m-4 bg-light" style="width: 14rem">
+        <div class="shadow-lg card m-4 bg-light" style="width: 15rem">
           <div class="col card-header bg-success text-light">
             ${employee.employeeName}
-            <div><i class="fas fa-cat"></i> Manager</div>
+            <div><i class="fas fa-chess-king"></i> Manager</div>
           </div>
           <div class="card-body">
             <ul class="list-group">
@@ -50,10 +50,10 @@ const renderManager = (employee) => {
 };
 const renderEngineer = (employee) => {
   return `
-        <div class="shadow-lg card m-4 bg-light" style="width: 14rem">
+        <div class="shadow-lg card m-4 bg-light" style="width: 15rem">
           <div class="col card-header bg-success text-light">
             ${employee.employeeName}
-            <div><i class="fas fa-cat"></i> Engineer</div>
+            <div><i class="fas fa-chess-queen"></i> Engineer</div>
           </div>
           <div class="card-body">
             <ul class="list-group">
@@ -119,8 +119,8 @@ const generateHTML = (employees) => {
         <h1 class="text-light">My Team</h1>
       </header>
 
-      <div class="container justify-content-center" style="max-width: 60vw">
-        <div class="row">
+      <div class="container" style="max-width: 70vw">
+        <div class="row justify-content-md-center">
         ${employeeCards.join("")}
         </div>
       </div>
