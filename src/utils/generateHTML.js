@@ -130,7 +130,7 @@ const generateHTML = (employees) => {
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
-  </body>
+    </body>
 </html>
   `;
 };

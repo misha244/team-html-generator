@@ -23,7 +23,7 @@ describe("Employee", () => {
     expect(actual).toBe(expected);
   });
 
-  it("email should be email so that it is email", () => {
+  it("new instance of Employee email should be set", () => {
     const expected = employeeInfo.employeeEmail;
     const employee = new Employee(employeeInfo);
     const actual = employee.employeeEmail;
