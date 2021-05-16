@@ -4,17 +4,17 @@ const baseQuestions = [
   {
     type: "input",
     message: "Please enter the employee's name: ",
-    name: "name",
+    name: "employeeName",
   },
   {
     type: "number",
     message: "Please enter the employee's ID number: ",
-    name: "employeeID",
+    name: "employeeId",
   },
   {
     type: "input",
     message: "Please enter the employee's email address: ",
-    name: "email",
+    name: "employeeEmail",
   },
 ];
 
